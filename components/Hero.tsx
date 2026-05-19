@@ -87,7 +87,7 @@ export default function Hero() {
             </div>
 
             <p className="text-slate-400 text-base sm:text-lg mb-8 max-w-lg leading-relaxed">
-              Passionné par la Data Science et l'IA, je construis des pipelines de données
+              Passionné par la Data Science et l&apos;IA, je construis des pipelines de données
               robustes, des modèles intelligents et des applications web modernes.
             </p>
 
@@ -150,7 +150,7 @@ export default function Hero() {
                 <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-white/5" />
               </div>
 
-              {/* Floating badge 1 */}
+              {/* Floating badges */}
               <div className="absolute -top-2 -right-4 sm:right-0 bg-[#0d1b2e] border border-slate-700/60 rounded-xl px-3 py-2 shadow-xl animate-float">
                 <div className="flex items-center gap-2">
                   <span className="text-lg">🎓</span>
@@ -158,7 +158,6 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Floating badge 2 */}
               <div className="absolute -bottom-2 -left-4 sm:left-0 bg-[#0d1b2e] border border-slate-700/60 rounded-xl px-3 py-2 shadow-xl animate-float-delayed">
                 <div className="flex items-center gap-2">
                   <span className="text-lg">📊</span>

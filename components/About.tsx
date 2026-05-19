@@ -3,7 +3,7 @@ import ScrollReveal from './ScrollReveal'
 
 const STATS = [
   { value: '3+', label: 'Projets Data & IA', icon: '📊' },
-  { value: '1+', label: "An d'expérience", icon: '💼' },
+  { value: '1+', label: "An d'expérience", icon: '💼' }, // Corrigé ici en utilisant des guillemets doubles autour de la chaîne
   { value: 'M2', label: 'Master Architecte IA', icon: '🎓' },
 ]
 
@@ -31,19 +31,19 @@ export default function About() {
                 Je suis <strong className="text-white font-semibold">Touré Abdoul-Aziz</strong>,
                 développeur web et data scientist, actuellement en{' '}
                 <strong className="text-blue-400">Master Architecte en Intelligence Artificielle</strong>{' '}
-                à l'École Multimédia / Campus Fonderie de l'Image à Paris.
+                à l&apos;École Multimédia / Campus Fonderie de l&apos;Image à Paris.
               </p>
               <p>
-                Fort d'une expérience de stagiaire{' '}
+                Fort d&apos;une expérience de stagiaire{' '}
                 <strong className="text-white font-semibold">Développeur Front-End</strong> chez{' '}
-                <strong className="text-white font-semibold">KEHO Group</strong> en Côte d'Ivoire,
-                j'ai acquis des compétences solides en développement web tout en développant
-                une forte appétence pour la Data Science et l'IA.
+                <strong className="text-white font-semibold">KEHO Group</strong> en Côte d&apos;Ivoire,
+                j&apos;ai acquis des compétences solides en développement web tout en développant
+                une forte appétence pour la Data Science et l&apos;IA.
               </p>
               <p>
-                Mes projets récents couvrent l'analyse de données e-commerce sur{' '}
+                Mes projets récents couvrent l&apos;analyse de données e-commerce sur{' '}
                 <strong className="text-white font-semibold">2.75M+ événements</strong>, la création
-                d'un système de fact-checking alimenté par{' '}
+                d&apos;un système de fact-checking alimenté par{' '}
                 <strong className="text-blue-400">LLaMA 3.3</strong>, et un pipeline ETL en production
                 sur <strong className="text-white font-semibold">AWS EC2</strong>.
               </p>

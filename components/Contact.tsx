@@ -66,9 +66,9 @@ export default function Contact() {
           <ScrollReveal delay={100}>
             <div className="space-y-4">
               <p className="text-slate-400 text-base leading-relaxed mb-6">
-                Je suis toujours ouvert à discuter de nouveaux projets, d'opportunités
-                professionnelles ou simplement d'échanges sur la Data Science et l'IA.
-                N'hésitez pas à me contacter !
+                Je suis toujours ouvert à discuter de nouveaux projets, d&apos;opportunités
+                professionnelles ou simplement d&apos;échanges sur la Data Science et l&apos;IA.
+                N&apos;hésitez pas à me contacter !
               </p>
 
               {CONTACT_INFO.map((item) => {
