@@ -30,7 +30,7 @@ const EXPERIENCES = [
       "Maintenance corrective/évolutive et débogage pour garantir la stabilité",
       'Tests et validation des fonctionnalités selon un cycle de livraison Agile',
     ],
-    current: false,
+    current: true,
     type: 'Stage',
   },
   {
