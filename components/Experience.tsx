@@ -19,6 +19,22 @@ const EXPERIENCES = [
   },
   {
     period: '2024 — 2025',
+    role: 'Développeur Web & Mobile',
+    company: 'ADN Technologie',
+    location: 'Abidjan, Côte d’Ivoire',
+    description:
+      "Optimisation technique et structurelle d'applications web et mobiles pour améliorer l'expérience utilisateur (UX) et le parcours client. Développement et intégration d'API REST pour la centralisation, le flux et la mise en valeur des données applicatives. Maintenance corrective et évolutive des applications existantes, optimisation des performances et sécurisation. Tests, débogage et validation des fonctionnalités. Travail en méthodologie Agile (Scrum) avec gestion via Git, participation aux déploiements et à la mise en production.",
+    achievements: [
+      "Centralisation et intégration d’API REST pour un meilleur flux des données applicatives",
+      "Optimisation des performances et sécurisation des applications",
+      "Maintenance corrective/évolutive et débogage pour garantir la stabilité",
+      'Tests et validation des fonctionnalités selon un cycle de livraison Agile',
+    ],
+    current: false,
+    type: 'Stage',
+  },
+  {
+    period: 'Juin - Déc.2023',
     role: 'Stagiaire Développeur Front-End',
     company: 'KEHO Group',
     location: "Côte d’Ivoire",
@@ -34,6 +50,7 @@ const EXPERIENCES = [
     type: 'Stage',
   },
 ]
+
 
 export default function Experience() {
   return (

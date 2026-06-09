@@ -3,7 +3,7 @@ import ScrollReveal from './ScrollReveal'
 
 const EDUCATION = [
   {
-    period: '2025 — 2026',
+    period: '2025 — 2027',
     degree: 'Master Architecte en Intelligence Artificielle',
     school: "École Multimédia / Campus Fonderie de l’Image",
     location: 'Paris, France',
