@@ -4,7 +4,7 @@ import ScrollReveal from './ScrollReveal'
 const STATS = [
   { value: '3+', label: 'Projets Data & IA', icon: '📊' },
   { value: '1+', label: "An d'expérience", icon: '💼' }, // Corrigé ici en utilisant des guillemets doubles autour de la chaîne
-  { value: 'M2', label: 'Master Architecte IA', icon: '🎓' },
+  { value: 'M1', label: 'Master Architecte IA', icon: '🎓' },
 ]
 
 const HIGHLIGHTS = [
