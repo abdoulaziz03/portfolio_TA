@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Github, Gitlab } from 'lucide-react'
 import SectionTitle from './SectionTitle'
 import ScrollReveal from './ScrollReveal'
 
@@ -22,6 +22,60 @@ interface Project {
 }
 
 const PROJECTS: Project[] = [
+  {
+    title: "L'air de Paris",
+    subtitle: 'Plateforme Smart City',
+    description:
+      "Suivi de la qualité de l'air et de la mobilité dans les 20 arrondissements de Paris : collecte horaire des données ouvertes, capteurs IoT simulés, prévision PM2.5 du lendemain, détection d'anomalies, alertes e-mail, rapport PDF hebdomadaire et tableau de bord public React.",
+    category: 'Data & IA',
+    gradient: 'from-emerald-600 to-green-500',
+    badgeColor: 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30',
+    emoji: '🌆',
+    tags: ['Python', 'FastAPI', 'Airflow', 'TimescaleDB', 'React', 'scikit-learn', 'Docker', 'Grafana', 'GitLab CI'],
+    metrics: [
+      { label: 'Arrondissements', value: '20' },
+      { label: 'DAGs Airflow', value: '6' },
+      { label: 'Prévision', value: 'J+1' },
+    ],
+    link: 'https://gitlab.com/Abdoulazizt/smart-city',
+    linkLabel: 'Voir sur GitLab',
+  },
+  {
+    title: 'Olist Data Platform',
+    subtitle: 'Plateforme data e-commerce de bout en bout',
+    description:
+      "Ingestion, Data Lake médaillon (MinIO / S3), transformations Spark avec quality gate Great Expectations, entrepôt en étoile (PostgreSQL / RDS), streaming Kafka temps réel et modèle de prédiction des retards de livraison suivi dans MLflow. Infrastructure AWS provisionnée avec Terraform.",
+    category: 'Data Engineering',
+    gradient: 'from-orange-600 to-amber-500',
+    badgeColor: 'bg-orange-500/15 text-orange-400 border-orange-500/30',
+    emoji: '🛒',
+    tags: ['PySpark', 'Airflow', 'Kafka', 'MLflow', 'Great Expectations', 'Terraform', 'AWS S3/RDS', 'Power BI'],
+    metrics: [
+      { label: 'Commandes', value: '99K+' },
+      { label: 'Services Docker', value: '16' },
+      { label: 'Lift ML', value: '×2.7' },
+    ],
+    link: 'https://gitlab.com/Abdoulazizt/olist-data-platform',
+    linkLabel: 'Voir sur GitLab',
+  },
+  {
+    title: 'Churn Prediction',
+    subtitle: 'Désabonnement client télécom',
+    description:
+      "Prédiction du churn sur le dataset Telco (7 043 clients) : nettoyage, feature engineering sans fuite de données, comparaison de modèles par GridSearchCV, pipeline GitLab CI avec garde-fou sur l'AUC et dashboard Streamlit de scoring client et par lot.",
+    category: 'Machine Learning',
+    gradient: 'from-rose-600 to-pink-500',
+    badgeColor: 'bg-rose-500/15 text-rose-400 border-rose-500/30',
+    emoji: '📉',
+    tags: ['Python', 'scikit-learn', 'Pandas', 'Streamlit', 'Plotly', 'Pytest', 'GitLab CI'],
+    metrics: [
+      { label: 'AUC test', value: '0.84' },
+      { label: 'Recall', value: '78%' },
+      { label: 'Clients', value: '7 043' },
+    ],
+    link: 'https://gitlab.com/Abdoulazizt/churn-prediction',
+    linkLabel: 'Voir sur GitLab',
+  },
   {
     title: 'E-Commerce Analytics Dashboard',
     subtitle: 'RetailRocket Dataset',
@@ -134,7 +188,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200 group"
             >
-              <Github size={15} className="opacity-70" />
+              {project.link.includes('gitlab.com') ? (
+                <Gitlab size={15} className="opacity-70" />
+              ) : (
+                <Github size={15} className="opacity-70" />
+              )}
               <span className="group-hover:underline underline-offset-2">{project.linkLabel}</span>
               <ExternalLink size={13} className="opacity-50 group-hover:opacity-100 transition-opacity" />
             </a>
@@ -163,7 +221,7 @@ export default function Projects() {
         </div>
 
         <ScrollReveal delay={400}>
-          <div className="mt-10 text-center">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
               href="https://github.com/abdoulaziz03"
               target="_blank"
@@ -172,6 +230,15 @@ export default function Projects() {
             >
               <Github size={16} />
               Voir tous mes projets sur GitHub
+            </a>
+            <a
+              href="https://gitlab.com/Abdoulazizt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-slate-700 text-slate-400 rounded-xl text-sm font-medium hover:border-orange-500/50 hover:text-orange-400 transition-all duration-200 hover:-translate-y-0.5"
+            >
+              <Gitlab size={16} />
+              Voir tous mes projets sur GitLab
             </a>
           </div>
         </ScrollReveal>
