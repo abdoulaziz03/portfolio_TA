@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import SectionTitle from './SectionTitle'
 import ScrollReveal from './ScrollReveal'
+import Emoji from './Emoji'
 
 interface Skill {
   name: string
@@ -112,7 +113,7 @@ export default function Skills() {
                     : 'bg-[#0d1b2e] border border-slate-700/50 text-slate-400 hover:text-white hover:border-slate-600'
                 }`}
               >
-                <span>{cat.emoji}</span>
+                <Emoji native={cat.emoji} />
                 <span className="hidden sm:inline">{cat.label}</span>
               </button>
             ))}
@@ -125,7 +126,7 @@ export default function Skills() {
             className={`bg-gradient-to-br ${active.color} border rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto`}
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-3xl">{active.emoji}</span>
+              <Emoji native={active.emoji} className="text-3xl" />
               <h3 className="text-lg font-semibold text-white">{active.label}</h3>
             </div>
 

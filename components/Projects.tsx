@@ -1,6 +1,7 @@
 import { ExternalLink, Github, Gitlab } from 'lucide-react'
 import SectionTitle from './SectionTitle'
 import ScrollReveal from './ScrollReveal'
+import Emoji from './Emoji'
 
 interface Metric {
   label: string
@@ -140,7 +141,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         <div className={`bg-gradient-to-r ${project.gradient} p-6 relative overflow-hidden`}>
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_50%,white,transparent_70%)]" />
           <div className="flex items-start justify-between relative z-10">
-            <span className="text-4xl">{project.emoji}</span>
+            <Emoji native={project.emoji} className="text-4xl" />
             <span
               className={`text-xs font-semibold px-3 py-1 rounded-full border backdrop-blur-sm bg-black/20 text-white border-white/20`}
             >

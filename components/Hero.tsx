@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { Github, Mail, ChevronDown } from 'lucide-react'
+import Emoji from './Emoji'
 
 const TITLES = [
   'Data Scientist',
@@ -153,14 +154,14 @@ export default function Hero() {
               {/* Floating badges */}
               <div className="absolute -top-2 -right-4 sm:right-0 bg-[#0d1b2e] border border-slate-700/60 rounded-xl px-3 py-2 shadow-xl animate-float">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg">🎓</span>
+                  <Emoji native="🎓" className="text-lg" />
                   <span className="text-xs text-slate-300 font-medium whitespace-nowrap">Master 2 — ESIC Malakoff</span>
                 </div>
               </div>
 
               <div className="absolute -bottom-2 -left-4 sm:left-0 bg-[#0d1b2e] border border-slate-700/60 rounded-xl px-3 py-2 shadow-xl animate-float-delayed">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg">📊</span>
+                  <Emoji native="📊" className="text-lg" />
                   <span className="text-xs text-slate-300 font-medium whitespace-nowrap">3 Projets Data / IA</span>
                 </div>
               </div>

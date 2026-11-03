@@ -1,5 +1,6 @@
 import SectionTitle from './SectionTitle'
 import ScrollReveal from './ScrollReveal'
+import Emoji from './Emoji'
 
 const STATS = [
   { value: '6+', label: 'Projets Data & IA', icon: '📊' },
@@ -76,7 +77,7 @@ export default function About() {
                   className="flex items-center gap-5 bg-[#0d1b2e] border border-slate-700/50 rounded-2xl p-5 hover:border-blue-500/30 transition-colors duration-300"
                 >
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-slate-700/50 flex items-center justify-center text-2xl shrink-0">
-                    {stat.icon}
+                    <Emoji native={stat.icon} />
                   </div>
                   <div>
                     <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
