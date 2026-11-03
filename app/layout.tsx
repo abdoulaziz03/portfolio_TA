@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Touré Abdoul-Aziz | Data Scientist & Développeur Web',
   description:
-    'Portfolio de Touré Abdoul-Aziz — Data Scientist, Data Engineer et Développeur Web. Étudiant en Master Architecte IA à Paris.',
+    'Portfolio de Touré Abdoul-Aziz — Data Scientist, Data Engineer et Développeur Web. Étudiant en Master 2 Chef de projet Data & IA au Groupe ESIC (Malakoff).',
   keywords: ['Data Science', 'IA', 'Python', 'Next.js', 'Développeur Web', 'Pipeline ETL', 'Portfolio'],
   authors: [{ name: 'Touré Abdoul-Aziz' }],
 }

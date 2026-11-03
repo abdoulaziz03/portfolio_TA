@@ -3,14 +3,24 @@ import ScrollReveal from './ScrollReveal'
 
 const EDUCATION = [
   {
-    period: '2025 — 2027',
-    degree: 'Master Architecte en Intelligence Artificielle',
+    period: '2026 — 2027',
+    degree: 'Master 2 Chef de projet Data & IA',
+    school: 'Groupe ESIC',
+    location: 'Malakoff, France',
+    description:
+      'Pilotage de projets data et IA de bout en bout : cadrage avec le client, architecture de plateformes data, industrialisation des modèles et mise en production.',
+    tags: ['Gestion de projet Data', 'Data Engineering', 'MLOps', 'Cloud', 'IA'],
+    current: true,
+  },
+  {
+    period: '2025 — 2026',
+    degree: 'Master 1 Architecte en Intelligence Artificielle',
     school: "École Multimédia / Campus Fonderie de l’Image",
     location: 'Paris, France',
     description:
       'Formation avancée en architecture IA, machine learning, deep learning et MLOps. Conception de systèmes IA robustes et déploiement en production.',
     tags: ['Machine Learning', 'Deep Learning', 'MLOps', 'LLM', 'Architecture IA'],
-    current: true,
+    current: false,
   },
   {
     period: '2022 — 2025',

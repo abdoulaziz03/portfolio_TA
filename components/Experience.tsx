@@ -4,12 +4,15 @@ import ScrollReveal from './ScrollReveal'
 const EXPERIENCES = [
   {
     period: '2025 — Présent',
-    role: 'Master Architecte en IA — Étudiant-Chercheur',
-    company: "École Multimédia / Campus Fonderie de l’Image",
-    location: 'Paris, France',
+    role: 'Master Data & IA — Étudiant-Chercheur',
+    company: "Groupe ESIC (M2) · École Multimédia / Campus Fonderie de l’Image (M1)",
+    location: 'Malakoff / Paris, France',
     description:
-      "Développement de projets en Data Science, ingénierie des données et IA générative dans le cadre du Master. Conception et déploiement de pipelines ETL, applications de fact-checking et dashboards analytiques.",
+      "Développement de projets en Data Science, ingénierie des données et IA générative dans le cadre du Master. Conception et déploiement de pipelines ETL, plateformes data, modèles de machine learning et dashboards analytiques.",
     achievements: [
+      "Plateforme Smart City « L'air de Paris » : qualité de l'air, IoT et prévision J+1 pour un client",
+      'Plateforme data e-commerce Olist : Spark, Kafka, MLflow et infrastructure AWS via Terraform',
+      'Modèle de prédiction du churn télécom (AUC 0.84) industrialisé avec GitLab CI',
       'Pipeline ETL production sur AWS EC2 avec Airflow, MinIO et PostgreSQL',
       'Système de fact-checking IA avec LLaMA 3.3 déployé sur Railway',
       "Dashboard e-commerce analysant 2.75M+ événements utilisateurs",

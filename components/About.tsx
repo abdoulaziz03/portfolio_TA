@@ -2,9 +2,9 @@ import SectionTitle from './SectionTitle'
 import ScrollReveal from './ScrollReveal'
 
 const STATS = [
-  { value: '3+', label: 'Projets Data & IA', icon: '📊' },
+  { value: '6+', label: 'Projets Data & IA', icon: '📊' },
   { value: '1+', label: "An d'expérience", icon: '💼' }, // Corrigé ici en utilisant des guillemets doubles autour de la chaîne
-  { value: 'M1', label: 'Master Architecte IA', icon: '🎓' },
+  { value: 'M2', label: 'Master Chef de projet Data & IA', icon: '🎓' },
 ]
 
 const HIGHLIGHTS = [
@@ -30,7 +30,8 @@ export default function About() {
               <p>
                 Je suis <strong className="text-white font-semibold">Touré Abdoul-Aziz</strong>,
                 développeur web et data scientist, actuellement en{' '}
-                <strong className="text-blue-400">Master Architecte en Intelligence Artificielle</strong>{' '}
+                <strong className="text-blue-400">Master 2 Chef de projet Data & IA</strong>{' '}
+                au Groupe ESIC à Malakoff, après un Master 1 Architecte en Intelligence Artificielle
                 à l&apos;École Multimédia / Campus Fonderie de l&apos;Image à Paris.
               </p>
               <p>

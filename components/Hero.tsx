@@ -8,7 +8,7 @@ const TITLES = [
   'Data Scientist',
   'Data Engineer',
   'Développeur Web & IA',
-  'Étudiant Master IA',
+  'Étudiant Master 2 Data & IA',
 ]
 
 export default function Hero() {
@@ -154,7 +154,7 @@ export default function Hero() {
               <div className="absolute -top-2 -right-4 sm:right-0 bg-[#0d1b2e] border border-slate-700/60 rounded-xl px-3 py-2 shadow-xl animate-float">
                 <div className="flex items-center gap-2">
                   <span className="text-lg">🎓</span>
-                  <span className="text-xs text-slate-300 font-medium whitespace-nowrap">Master IA — Paris</span>
+                  <span className="text-xs text-slate-300 font-medium whitespace-nowrap">Master 2 — ESIC Malakoff</span>
                 </div>
               </div>
 
